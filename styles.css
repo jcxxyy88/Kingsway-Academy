@@ -1,0 +1,68 @@
+:root{
+  --primary:#0a6b38; /* tuned to match the logo green */
+  --accent:#f4a300;  /* accent color (keep or change as needed) */
+  --muted:#6b7280;
+  --bg:#ffffff;
+  --max-width:1100px;
+  --radius:8px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+body{margin:0;color:#111;background:var(--bg);-webkit-font-smoothing:antialiased}
+.container{max-width:var(--max-width);margin:0 auto;padding:1rem}
+
+.site-header{background:linear-gradient(90deg, rgba(10,107,56,0.95), rgba(8,58,91,0.9));color:#fff;position:sticky;top:0;z-index:50}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:.75rem 1rem}
+.brand{display:flex;align-items:center;gap:.75rem}
+.logo{display:flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:8px;overflow:hidden;background:transparent}
+.logo-img{width:56px;height:56px;object-fit:contain;display:block}
+.brand-text h1{margin:0;font-size:1.05rem;color:#fff}
+.tagline{margin:0;font-size:.85rem;opacity:.95;color:#eaf8ef}
+
+/* Navigation */
+.nav{display:flex;gap:.5rem;align-items:center}
+.nav a{color:#fff;text-decoration:none;padding:.45rem .7rem;border-radius:6px;font-weight:600}
+.nav a:hover{background:rgba(255,255,255,0.06)}
+.cta{background:var(--accent);color:#083a5b}
+
+.nav-toggle{display:none;background:none;border:0;color:#fff;font-size:1.2rem}
+
+/* Hero */
+.hero{padding:2.25rem 0;background:linear-gradient(180deg, rgba(10,107,56,0.06), transparent)}
+.hero-grid{display:grid;grid-template-columns:1fr 420px;gap:1.5rem;align-items:center}
+.hero-text h2{margin:0 0 .5rem;font-size:2rem;color:var(--primary)}
+.hero-text p{margin:.25rem 0;color:var(--muted)}
+.hero-image .placeholder{background:#dfeff8;border-radius:12px;height:220px;display:flex;align-items:center;justify-content:center;color:#234a6b}
+
+/* Sections */
+.section{padding:1.5rem 0}
+.features .feature-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.feature{background:#fff;border-radius:10px;padding:1rem;box-shadow:0 6px 18px rgba(11,93,145,0.06)}
+.feature-icon{font-size:1.9rem;margin-bottom:.5rem}
+.feature h4{margin:.2rem 0 .5rem}
+.bullet-list{margin:0;padding-left:1.2rem;color:var(--muted)}
+
+.contact-form{display:grid;gap:.6rem;max-width:720px;background:#fff;padding:1rem;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,0.04)}
+.contact-form label{display:block;font-size:.9rem;color:#222}
+.contact-form input, .contact-form textarea{width:100%;padding:.6rem;border-radius:8px;border:1px solid #e6e9ee}
+.form-actions{display:flex;gap:.5rem;align-items:center;margin-top:.5rem}
+
+.btn-primary{background:var(--primary);color:#fff;padding:.6rem .9rem;border-radius:8px;border:0;font-weight:700;text-decoration:none}
+.btn-outline{background:transparent;border:2px solid var(--primary);color:var(--primary);padding:.5rem .9rem;border-radius:8px;text-decoration:none}
+
+/* Footer */
+.site-footer{padding:1rem 0;border-top:1px solid #eef3f8;color:var(--muted)}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+.small{font-size:.85rem}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-image .placeholder{height:180px}
+  .nav{display:none}
+  .nav-toggle{display:block}
+}
+
+/* Accessibility focus */
+a:focus, button:focus, input:focus, textarea:focus{outline:3px solid rgba(10,107,56,0.18);outline-offset:2px}
