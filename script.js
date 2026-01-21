@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function(){
   const navToggle = document.querySelector('.nav-toggle');
   navToggle && navToggle.addEventListener('click', function(){
     const nav = document.querySelector('.nav');
-    if(nav.style.display === 'flex') nav.style.display = '';
+    if(nav.style.display === 'flex') nav.style.display = ''; 
     else nav.style.display = 'flex';
   });
 });
