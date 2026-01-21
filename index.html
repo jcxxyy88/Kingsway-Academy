@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kingsway Academy — Learn. Play. Lead.</title>
+  <meta name="description" content="Kingsway Academy — large soccer field, two basketball courts, excellent teachers, stellar academics, and air-conditioned classrooms." />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">
+          <img src="assets/logo.png" alt="Kingsway Academy logo" class="logo-img">
+        </div>
+        <div class="brand-text">
+          <h1>Kingsway Academy</h1>
+          <p class="tagline">Learn. Play. Lead.</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#academics">Academics</a>
+        <a href="#visit" class="cta">Book a Tour</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h2>Where champions learn and lead.</h2>
+          <p>Spacious sports fields, talented teachers, rigorous academics, and comfortable classrooms — discover why students thrive at Kingsway Academy.</p>
+          <p class="hero-cta">
+            <a href="#visit" class="btn-primary">Schedule a Tour</a>
+            <a href="#facilities" class="btn-outline">See Facilities</a>
+          </p>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <!-- Replace with real photo -->
+          <div class="placeholder">Photo: Soccer field & courts</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <h3>About Kingsway Academy</h3>
+      <p>At Kingsway Academy we combine stellar academics with exceptional extracurricular opportunities. Our experienced, caring teachers provide personalized instruction while students enjoy industry-standard athletic facilities and comfortable, air-conditioned classrooms.</p>
+    </section>
+
+    <section id="facilities" class="container section features">
+      <h3>Facilities</h3>
+      <div class="feature-grid">
+        <article class="feature">
+          <div class="feature-icon">⚽</div>
+          <h4>Large Soccer Field</h4>
+          <p>Full-size field for training, matches, and interschool competitions.</p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">🏀</div>
+          <h4>Two Basketball Courts</h4>
+          <p>Two full courts for practice, intramurals, and tournaments.</p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">👩‍🏫</div>
+          <h4>Excellent Teachers</h4>
+          <p>Experienced, student-centered faculty focused on growth and mentorship.</p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">📚</div>
+          <h4>Stellar Academics</h4>
+          <p>Rigorous programs and project-based learning to prepare students for the future.</p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">❄️</div>
+          <h4>Comfortable Classrooms</h4>
+          <p>Most classrooms are air-conditioned to ensure a focused learning environment year-round.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="academics" class="container section">
+      <h3>Academics & Student Support</h3>
+      <ul class="bullet-list">
+        <li>Small-group support and personalized instruction</li>
+        <li>Balanced curriculum: STEM, arts, and physical education</li>
+        <li>Clubs, leadership programs, and competitive teams</li>
+      </ul>
+    </section>
+
+    <section id="visit" class="container section contact">
+      <h3>Visit Us</h3>
+      <p>See Kingsway Academy in action — book a tour or get more information.</p>
+      <form id="contactForm" class="contact-form" onsubmit="return submitForm(event)">
+        <label>
+          Your name
+          <input type="text" name="name" id="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" id="email" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" id="message" rows="4" placeholder="Preferred tour date or question"></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Send Request</button>
+          <button type="button" class="btn-outline" onclick="scrollToTop()">Back to top</button>
+        </div>
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+      </form>
+      <div class="contact-info">
+        <p><strong>Phone:</strong> (replace with school phone)</p>
+        <p><strong>Address:</strong> (replace with school address)</p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Kingsway Academy — Learn. Play. Lead.</p>
+        <p class="small">Images are placeholders. Replace with school photos or logo for final presentation.</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
